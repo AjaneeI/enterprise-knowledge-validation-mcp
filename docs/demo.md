@@ -11,7 +11,7 @@ All examples use fictional records and the fixed October 16, 2026 snapshot. They
 5. Show `spoof_rejected=true`: the server rejects an extra `approval_received` argument.
 6. End with the boundaries: synthetic data, frozen time, editable trust root, no enterprise identity and no Glean connection.
 
-The [stdio transcript](../evidence/demo-stdio.json) and [HTTP transcript](../evidence/demo-http.json) are actual SDK responses. The illustration is a labeled summary of selected fields, not a screenshot of a user interface.
+The [stdio transcript](../evidence/demo-stdio.json) and [HTTP transcript](../evidence/demo-http.json) are actual SDK responses. The [gallery](assets/demonstrations.svg) renders selected verbatim fields, not a separate graphical interface. [Capture provenance](../evidence/visual-capture-provenance.json) binds the selected fields to the source transcript.
 
 ## Streamable HTTP
 

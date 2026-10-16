@@ -1,0 +1,62 @@
+{
+  "source": "evidence/demo-stdio.json",
+  "source_sha256": "92a97ca58b76411a80fd9af622ab8bef792085048ca071c7631cf40f05e0f9a8",
+  "transport": "stdio",
+  "capture_method": "Verbatim selected JSON fields rendered as a response transcript; no frontend or simulated application UI",
+  "scenarios": [
+    {
+      "scenario": "superseded",
+      "asset": "docs/assets/demo-procedure.svg",
+      "selected_fields": [
+        "procedure_id",
+        "status",
+        "current_approved_version",
+        "evidence_refs",
+        "decision",
+        "human_review_required"
+      ],
+      "selected_response": {
+        "procedure_id": "SOP-104@1.0",
+        "status": "superseded",
+        "current_approved_version": "SOP-104@2.0",
+        "evidence_refs": [
+          "synthetic://procedures/SOP-104/1.0",
+          "synthetic://procedures/SOP-104/2.0"
+        ],
+        "decision": "hold_for_review",
+        "human_review_required": true
+      }
+    },
+    {
+      "scenario": "missing_approval",
+      "asset": "docs/assets/demo-readiness.svg",
+      "selected_fields": [
+        "action_id",
+        "approval_evidence_status",
+        "blockers",
+        "evidence_refs",
+        "readiness",
+        "ready_for_human_review",
+        "human_review_required",
+        "execution_authorized"
+      ],
+      "selected_response": {
+        "action_id": "ACT-001",
+        "approval_evidence_status": "missing",
+        "blockers": [
+          "Human approval evidence missing"
+        ],
+        "evidence_refs": [
+          "synthetic://actions/ACT-001",
+          "synthetic://procedures/SOP-104/2.0",
+          "synthetic://evidence/EVD-001",
+          "synthetic://evidence/EVD-002"
+        ],
+        "readiness": "blocked",
+        "ready_for_human_review": false,
+        "human_review_required": true,
+        "execution_authorized": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-16T19:44:51.191333+00:00",
+  "initial_public_commit": "cb009fa24f70874cb5d7bdc639f8d3337ff3d2d2",
+  "initial_ci": {
+    "run_id": 38956463760,
+    "url": "https://github.com/AjaneeI/enterprise-knowledge-validation-mcp/actions/runs/38956463760",
+    "conclusion": "success",
+    "full_test_result": "106 passed in 22.96s",
+    "protocol_cases_in_suite": 36,
+    "package_build": "passed",
+    "installed_wheel_outside_checkout": "passed"
+  },
+  "anonymous_verification": {
+    "public": true,
+    "default_branch": "main",
+    "initial_commit": "cb009fa24f70874cb5d7bdc639f8d3337ff3d2d2",
+    "clean_root_commit": true,
+    "noreply_author_and_committer": true,
+    "anonymous_raw_checks": [
+      {
+        "path": "README.md",
+        "status": 200,
+        "sha256": "d371f2d1ff562cf3e5d605b0e180ec6db81cc6f2b5eb05837b3cf66757e5d925"
+      },
+      {
+        "path": "LICENSE",
+        "status": 200,
+        "sha256": "c50e2ba4983e18796f25f35d639f980adc9d8460bd9b4b117be015ccef8e9311"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": 200,
+        "sha256": "a98b38b19d7aefb727504768514a0cbb77acb0c760f715ce501b5065996eb98a"
+      },
+      {
+        "path": "docs/verification.md",
+        "status": 200,
+        "sha256": "246f5b544843cf516916b81a4628eb528510357af157f3b41edddd81a0e96ce4"
+      },
+      {
+        "path": "docs/assets/hero.svg",
+        "status": 200,
+        "sha256": "42896ffe97c06ecfba291ac1453d7ac11c2d56a4c9ca1acdf6e7f74aa0792985"
+      }
+    ]
+  },
+  "private_history_imported": false,
+  "publication_decision": "Maintainer-authorized clean public repository; source gates passed within documented scope",
+  "presentation_verification": "See current main workflow badge and visual-evidence documentation; subsequent run results are tied to their commits."
+}

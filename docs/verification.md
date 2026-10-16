@@ -1,6 +1,6 @@
 # Verification record
 
-This document describes the fresh local candidate checks. Results and timestamps are in `evidence/verification.json`; full pytest output is in `evidence/tests.txt`. Remote candidate CI has not run because no public repository exists. The workflow is prepared, and its commands are exercised locally; that is not a claim of hosted CI success.
+The clean public initial commit `cb009fa24f70874cb5d7bdc639f8d3337ff3d2d2` passed [GitHub Actions run 38956463760](https://github.com/AjaneeI/enterprise-knowledge-validation-mcp/actions/runs/38956463760): 106 tests, an actual stdio demo, source/wheel build and installed-wheel execution outside the checkout. The live README CI badge tracks `main`. Additional dated local checks are recorded below; they are not all separate hosted workflow steps. See [hosted evidence](../evidence/publication-checks.json).
 
 ## Reproduce
 
@@ -37,3 +37,13 @@ Passing local tests establish the behavior exercised here, not production safety
 ## Separate read-only review
 
 A separate AI-assisted reviewer found no material privacy, preservation, claims or workflow defect. It identified a minor source-archive navigation omission, corrected by including the workflow and security document in the archive. Final archive payload inspection and the full 106-test suite passed after that packaging correction. See `evidence/independent-review.json`. This review does not establish legal ownership or production security.
+
+## Public release and presentation verification
+
+The public repository starts from one clean root commit rather than private development ancestry. Initial anonymous API/raw-file checks verified public visibility, default `main`, the root commit and GitHub noreply author/committer metadata. Original private repositories remain separate.
+
+The presentation pass changes documentation and original SVG assets only. Application, fixture, test and dependency-lock bytes remain preserved. Relevant local regression checks exercise the 36 protocol cases and real demo outputs; package checks verify the updated README and license metadata. The final hosted run executes the complete test suite again. [Visual mapping and QA](visual-evidence.md).
+
+The initial successful hosted run emits upstream Action-runtime and runner-image migration notices. Those notices did not fail the tests or package checks. The Actions remain pinned to the reviewed immutable commits; a future maintenance update should revalidate newer Action runtimes and the selected runner image.
+
+The presentation regression passed **36 protocol cases** again in 16.23 seconds. [Presentation checks](../evidence/presentation-checks.json) record the actual SVG/Markdown review and [protocol output](../evidence/presentation-protocol-tests.txt). The complete suite is also rerun by the hosted workflow for the presentation commit.

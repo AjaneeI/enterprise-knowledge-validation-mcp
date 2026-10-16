@@ -1,0 +1,103 @@
+{
+  "checked_at_utc": "2026-10-16T19:45:51.903054+00:00",
+  "scope": "Documentation and original visual assets; source, fixtures, tests and dependency lock preserved",
+  "protocol_regression": "36 passed in 16.23s",
+  "protocol_log": "evidence/presentation-protocol-tests.txt",
+  "rendered_svg_assets": [
+    {
+      "asset": "architecture.svg",
+      "width": 1280,
+      "height": 650,
+      "overflow": []
+    },
+    {
+      "asset": "build-badge.svg",
+      "width": 208,
+      "height": 25,
+      "overflow": []
+    },
+    {
+      "asset": "decision-flow.svg",
+      "width": 1280,
+      "height": 904,
+      "overflow": []
+    },
+    {
+      "asset": "demo-procedure.svg",
+      "width": 1280,
+      "height": 502,
+      "overflow": []
+    },
+    {
+      "asset": "demo-readiness.svg",
+      "width": 1280,
+      "height": 664,
+      "overflow": []
+    },
+    {
+      "asset": "demonstrations.svg",
+      "width": 1280,
+      "height": 1326,
+      "overflow": []
+    },
+    {
+      "asset": "hero.svg",
+      "width": 1280,
+      "height": 440,
+      "overflow": []
+    },
+    {
+      "asset": "protocol-badge.svg",
+      "width": 217,
+      "height": 25,
+      "overflow": []
+    },
+    {
+      "asset": "tests-badge.svg",
+      "width": 182,
+      "height": 25,
+      "overflow": []
+    },
+    {
+      "asset": "trust-boundary.svg",
+      "width": 1280,
+      "height": 657,
+      "overflow": []
+    }
+  ],
+  "manual_visual_review": "All ten rendered SVG assets inspected, including five main visual sections, individual genuine-response captures and badges; code/diagram correspondence reviewed",
+  "github_markdown_api": "README rendered through GitHub GFM API; desktop and mobile previews inspected",
+  "readme_render_checks": {
+    "desktop": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "headings": [
+        "The problem",
+        "Implemented capabilities",
+        "Working demonstrations",
+        "Architecture",
+        "Deterministic validation",
+        "Engineering decisions and tradeoffs",
+        "Reliability and verification",
+        "Security and governance",
+        "Potential Glean integration",
+        "Future contextual knowledge reuse",
+        "Employee adoption and workflow implementation",
+        "Run locally",
+        "Documentation",
+        "Provenance and rights"
+      ]
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    }
+  },
+  "local_links_and_anchors": "passed",
+  "demonstration_fidelity": "Selected field values match the SHA-256-bound official SDK transcript",
+  "preserved_files": 13,
+  "rights_policy": "All Rights Reserved; third-party terms and noncopyrightable elements excepted",
+  "hosted_validation": "The main workflow runs the complete 106-test suite and package checks on each push. See live workflow status; initial hosted evidence is in publication-checks.json."
+}

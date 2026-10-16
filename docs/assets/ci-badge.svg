@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="152" height="25" viewBox="0 0 152 25" role="img" aria-labelledby="title desc">
-<title id="title">GitHub CI: not run</title><desc id="desc">Recorded local verification status; see verification documentation.</desc>
-<style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#153840}.muted{fill:#4c6870}.label{font-size:13px;font-weight:700;letter-spacing:1.5px}.copy{font-size:17px}.heading{font-size:22px;font-weight:700}</style>
-<rect width="152" height="25" rx="4" fill="#647176"/><path d="M4 0H83v25H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4" fill="#344b52"/><g fill="white" font-size="11" text-anchor="middle"><text x="41.5" y="17">GitHub CI</text><text x="117.5" y="17">not run</text></g></svg>

@@ -13,12 +13,14 @@
   "actions_pinned_to_sha": 3,
   "public_name_intentionally_retained": "Ajanee Igharo (copyright and attribution)",
   "rights_status": "Maintainer confirmed independent ChatGPT/Codex-assisted provenance; narrow preserved-source/history/attribution review found no specific unresolved restriction. No legal guarantee of exclusivity.",
-  "publication_status": "Authorized new public repository; hosted CI and anonymous access pending initial publication",
+  "publication_status": "Authorized clean public repository; initial hosted CI and anonymous access verified",
   "limits": [
     "Pattern scan and manual inspection are bounded, not proof that no unknown secret exists.",
-    "Hosted CI and repository metadata require verification after initial creation.",
+    "Branch protection and private vulnerability reporting are not claimed; live main workflow badge tracks subsequent runs.",
     "Optional Inspector direct version was queried; its transitive npm dependency tree is not audited.",
     "No production authentication, company connection, deployment or organizational outcome is established."
   ],
-  "provenance_confirmation_date": "2026-10-16"
+  "provenance_confirmation_date": "2026-10-16",
+  "publication_evidence": "evidence/publication-checks.json",
+  "historical_snapshot_note": "Original scan fields describe the pre-Git sanitized snapshot. Public history uses a new root and noreply metadata; see publication evidence."
 }
