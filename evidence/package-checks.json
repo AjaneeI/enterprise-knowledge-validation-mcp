@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-10-16T18:58:24.509436+00:00",
+  "checks": [
+    {
+      "name": "build",
+      "exit_code": 0,
+      "seconds": 31.08
+    },
+    {
+      "name": "wheel-venv",
+      "exit_code": 0,
+      "seconds": 0.08
+    },
+    {
+      "name": "runtime-export",
+      "exit_code": 0,
+      "seconds": 0.06
+    },
+    {
+      "name": "wheel-runtime",
+      "exit_code": 0,
+      "seconds": 7.35
+    },
+    {
+      "name": "wheel-install",
+      "exit_code": 0,
+      "seconds": 5.72
+    },
+    {
+      "name": "demo-wheel",
+      "exit_code": 0,
+      "seconds": 2.74
+    },
+    {
+      "name": "sdist-protocol-smoke",
+      "exit_code": 0,
+      "seconds": 3.22
+    }
+  ],
+  "wheel_source_and_fixture_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/demo.py": "eb28aaf195a4afe9846ef3a3c72bf33dda417171a1d519f76f8c414c225f8411",
+    "src/logic.py": "29027e34527e8150c16344980cb8128ac08a1a8dbb74c6d0d55dc7f7e4405416",
+    "src/models.py": "cbd938505af7043ebc94671231fc21cf6e0750ac0c2b3440422341633036669e",
+    "src/server.py": "689c8da319a7109be3c5f7018451a1478cad8f64d340eaafd85327d472e9d177",
+    "src/data/records.json": "9ccac8b720c12ab1778ce2adef5ebf8fcda0c7f041926512434c16a8f10ff6ef"
+  },
+  "wheel_license_expression": "LicenseRef-All-Rights-Reserved",
+  "wheel_runs_outside_checkout": true,
+  "sdist_payload_matches_candidate": true,
+  "source_archive_smoke_result": "4 passed, 32 deselected in 2.32s",
+  "scope": "Local package checks; no upload or remote CI run."
+}

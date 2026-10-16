@@ -1,0 +1,31 @@
+{
+  "started_at_utc": "2026-10-16T18:56:12.785682+00:00",
+  "python": "Python 3.12.6",
+  "checks": [
+    {
+      "name": "full-tests",
+      "exit_code": 0,
+      "seconds": 48.17
+    },
+    {
+      "name": "protocol-collection",
+      "exit_code": 0,
+      "seconds": 1.22
+    },
+    {
+      "name": "demo-stdio",
+      "exit_code": 0,
+      "seconds": 1.29
+    },
+    {
+      "name": "demo-http",
+      "exit_code": 0,
+      "seconds": 1.19
+    }
+  ],
+  "remote_candidate_ci": "not run; no public repository created",
+  "completed_at_utc": "2026-10-16T18:57:05.926110+00:00",
+  "full_test_count": 106,
+  "protocol_case_count": 36,
+  "application_and_test_bytes_unchanged": true
+}

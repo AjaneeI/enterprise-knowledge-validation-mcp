@@ -1,0 +1,310 @@
+{
+  "source": "https://api.osv.dev/v1/querybatch",
+  "queries": [
+    {
+      "package": {
+        "name": "annotated-types",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.8.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "anyio",
+        "ecosystem": "PyPI"
+      },
+      "version": "4.15.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "attrs",
+        "ecosystem": "PyPI"
+      },
+      "version": "26.1.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "certifi",
+        "ecosystem": "PyPI"
+      },
+      "version": "2026.7.22",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "cffi",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.1.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "click",
+        "ecosystem": "PyPI"
+      },
+      "version": "8.5.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "colorama",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.4.6",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "cryptography",
+        "ecosystem": "PyPI"
+      },
+      "version": "50.0.2",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "h11",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.16.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "httpcore",
+        "ecosystem": "PyPI"
+      },
+      "version": "1.0.9",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "httpx",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.28.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "httpx-sse",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.4.3",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "idna",
+        "ecosystem": "PyPI"
+      },
+      "version": "3.20",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "iniconfig",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.3.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "jsonschema",
+        "ecosystem": "PyPI"
+      },
+      "version": "4.26.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "jsonschema-specifications",
+        "ecosystem": "PyPI"
+      },
+      "version": "2025.9.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "mcp",
+        "ecosystem": "PyPI"
+      },
+      "version": "1.30.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "packaging",
+        "ecosystem": "PyPI"
+      },
+      "version": "26.3",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pluggy",
+        "ecosystem": "PyPI"
+      },
+      "version": "1.7.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pycparser",
+        "ecosystem": "PyPI"
+      },
+      "version": "3.11",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pydantic",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.14.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pydantic-core",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.50.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pydantic-settings",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.16.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pygments",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.21.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pyjwt",
+        "ecosystem": "PyPI"
+      },
+      "version": "2.15.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pytest",
+        "ecosystem": "PyPI"
+      },
+      "version": "9.1.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "python-dotenv",
+        "ecosystem": "PyPI"
+      },
+      "version": "1.2.4",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "python-multipart",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.0.32",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "pywin32",
+        "ecosystem": "PyPI"
+      },
+      "version": "312",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "referencing",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.37.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "rpds-py",
+        "ecosystem": "PyPI"
+      },
+      "version": "2026.9.1",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "sse-starlette",
+        "ecosystem": "PyPI"
+      },
+      "version": "3.5.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "starlette",
+        "ecosystem": "PyPI"
+      },
+      "version": "1.8.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "typing-extensions",
+        "ecosystem": "PyPI"
+      },
+      "version": "4.16.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "typing-inspection",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.4.4",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "uvicorn",
+        "ecosystem": "PyPI"
+      },
+      "version": "0.54.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "setuptools",
+        "ecosystem": "PyPI"
+      },
+      "version": "83.0.0",
+      "advisories": []
+    },
+    {
+      "package": {
+        "name": "@modelcontextprotocol/inspector",
+        "ecosystem": "npm"
+      },
+      "version": "2.5.0",
+      "advisories": []
+    }
+  ],
+  "scope": "Locked Python runtime/dev packages and build backend; optional Inspector direct package only. Does not cover optional npm transitive dependencies, operating system, or unknown vulnerabilities."
+}

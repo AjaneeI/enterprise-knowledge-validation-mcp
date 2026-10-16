@@ -1,0 +1,24 @@
+{
+  "audited_at_utc": "2026-10-16T19:02:34.209968+00:00",
+  "scope": "All regular files in the sanitized source snapshot; no Git repository is included. Built wheel/source payloads separately checked.",
+  "file_count_at_scan": 52,
+  "svg_count": 7,
+  "secret_and_private_reference_candidates": [],
+  "broken_local_document_links": [],
+  "application_fixture_test_files_identical_to_reviewed_source": 13,
+  "runtime_dev_lockfile_unchanged": true,
+  "private_checkout_head_refs_and_tracked_files_unchanged": true,
+  "candidate_has_git_metadata": false,
+  "dependency_queries_without_advisory_match": 38,
+  "actions_pinned_to_sha": 3,
+  "public_name_intentionally_retained": "Ajanee Igharo (copyright and attribution)",
+  "rights_status": "Maintainer confirmed independent ChatGPT/Codex-assisted provenance; narrow preserved-source/history/attribution review found no specific unresolved restriction. No legal guarantee of exclusivity.",
+  "publication_status": "Authorized new public repository; hosted CI and anonymous access pending initial publication",
+  "limits": [
+    "Pattern scan and manual inspection are bounded, not proof that no unknown secret exists.",
+    "Hosted CI and repository metadata require verification after initial creation.",
+    "Optional Inspector direct version was queried; its transitive npm dependency tree is not audited.",
+    "No production authentication, company connection, deployment or organizational outcome is established."
+  ],
+  "provenance_confirmation_date": "2026-10-16"
+}

@@ -1,0 +1,479 @@
+{
+  "synthetic_demo": true,
+  "transport": "stdio",
+  "protocol_version": "2025-11-25",
+  "server": {
+    "name": "Knowledge Operations Demo",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tools": [
+    {
+      "name": "check_procedure_status",
+      "title": null,
+      "description": "Check synthetic procedure freshness. Use SOP-104@1.0 for a version or SOP-104 for current. Cite returned evidence and warnings; do not infer operational authorization.",
+      "inputSchema": {
+        "properties": {
+          "procedure_id": {
+            "maxLength": 40,
+            "pattern": "^SOP-[0-9]{3}(@[0-9]+\\.[0-9]+)?$",
+            "title": "Procedure Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "procedure_id"
+        ],
+        "title": "check_procedure_statusArguments",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "procedure_id": {
+            "title": "Procedure Id",
+            "type": "string"
+          },
+          "found": {
+            "title": "Found",
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "current",
+              "superseded",
+              "under_review",
+              "unknown",
+              "unavailable"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Version"
+          },
+          "is_superseded": {
+            "default": false,
+            "title": "Is Superseded",
+            "type": "boolean"
+          },
+          "current_approved_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Current Approved Version"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidence Refs",
+            "type": "array"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Warnings",
+            "type": "array"
+          },
+          "decision": {
+            "enum": [
+              "eligible_for_review",
+              "hold_for_review",
+              "unknown"
+            ],
+            "title": "Decision",
+            "type": "string"
+          },
+          "human_review_required": {
+            "const": true,
+            "default": true,
+            "title": "Human Review Required",
+            "type": "boolean"
+          },
+          "synthetic_demo": {
+            "const": true,
+            "default": true,
+            "title": "Synthetic Demo",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "procedure_id",
+          "found",
+          "status",
+          "decision"
+        ],
+        "title": "ProcedureStatus",
+        "type": "object"
+      },
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "meta": null,
+      "execution": null
+    },
+    {
+      "name": "assess_action_readiness",
+      "title": null,
+      "description": "Assess a stored synthetic action using bound approval and supporting evidence. Missing/conflicting evidence blocks readiness. Human review always required; execution never authorized.",
+      "inputSchema": {
+        "properties": {
+          "action_id": {
+            "pattern": "^ACT-[0-9]{3}$",
+            "title": "Action Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "action_id"
+        ],
+        "title": "assess_action_readinessArguments",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "$defs": {
+          "ProcedureStatus": {
+            "additionalProperties": false,
+            "properties": {
+              "procedure_id": {
+                "title": "Procedure Id",
+                "type": "string"
+              },
+              "found": {
+                "title": "Found",
+                "type": "boolean"
+              },
+              "status": {
+                "enum": [
+                  "current",
+                  "superseded",
+                  "under_review",
+                  "unknown",
+                  "unavailable"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "version": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Version"
+              },
+              "is_superseded": {
+                "default": false,
+                "title": "Is Superseded",
+                "type": "boolean"
+              },
+              "current_approved_version": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Current Approved Version"
+              },
+              "evidence_refs": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Evidence Refs",
+                "type": "array"
+              },
+              "warnings": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Warnings",
+                "type": "array"
+              },
+              "decision": {
+                "enum": [
+                  "eligible_for_review",
+                  "hold_for_review",
+                  "unknown"
+                ],
+                "title": "Decision",
+                "type": "string"
+              },
+              "human_review_required": {
+                "const": true,
+                "default": true,
+                "title": "Human Review Required",
+                "type": "boolean"
+              },
+              "synthetic_demo": {
+                "const": true,
+                "default": true,
+                "title": "Synthetic Demo",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "procedure_id",
+              "found",
+              "status",
+              "decision"
+            ],
+            "title": "ProcedureStatus",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "action_id": {
+            "title": "Action Id",
+            "type": "string"
+          },
+          "found": {
+            "title": "Found",
+            "type": "boolean"
+          },
+          "relevant_procedure": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Relevant Procedure"
+          },
+          "procedure_status": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ProcedureStatus"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "approval_evidence_status": {
+            "enum": [
+              "present",
+              "missing",
+              "insufficient",
+              "conflicting",
+              "unavailable"
+            ],
+            "title": "Approval Evidence Status",
+            "type": "string"
+          },
+          "evidence_complete": {
+            "default": false,
+            "title": "Evidence Complete",
+            "type": "boolean"
+          },
+          "blockers": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Blockers",
+            "type": "array"
+          },
+          "human_review_required": {
+            "const": true,
+            "default": true,
+            "title": "Human Review Required",
+            "type": "boolean"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidence Refs",
+            "type": "array"
+          },
+          "readiness": {
+            "default": "blocked",
+            "enum": [
+              "eligible_for_human_review",
+              "blocked"
+            ],
+            "title": "Readiness",
+            "type": "string"
+          },
+          "ready_for_human_review": {
+            "default": false,
+            "title": "Ready For Human Review",
+            "type": "boolean"
+          },
+          "execution_authorized": {
+            "const": false,
+            "default": false,
+            "title": "Execution Authorized",
+            "type": "boolean"
+          },
+          "synthetic_demo": {
+            "const": true,
+            "default": true,
+            "title": "Synthetic Demo",
+            "type": "boolean"
+          },
+          "evaluation_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Evaluation Time"
+          }
+        },
+        "required": [
+          "action_id",
+          "found",
+          "approval_evidence_status"
+        ],
+        "title": "Readiness",
+        "type": "object"
+      },
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "meta": null,
+      "execution": null
+    }
+  ],
+  "scenarios": {
+    "superseded": {
+      "procedure_id": "SOP-104@1.0",
+      "found": true,
+      "status": "superseded",
+      "version": "1.0",
+      "is_superseded": true,
+      "current_approved_version": "SOP-104@2.0",
+      "evidence_refs": [
+        "synthetic://procedures/SOP-104/1.0",
+        "synthetic://procedures/SOP-104/2.0"
+      ],
+      "warnings": [],
+      "decision": "hold_for_review",
+      "human_review_required": true,
+      "synthetic_demo": true
+    },
+    "missing_approval": {
+      "action_id": "ACT-001",
+      "found": true,
+      "relevant_procedure": "SOP-104@2.0",
+      "procedure_status": {
+        "procedure_id": "SOP-104@2.0",
+        "found": true,
+        "status": "current",
+        "version": "2.0",
+        "is_superseded": false,
+        "current_approved_version": "SOP-104@2.0",
+        "evidence_refs": [
+          "synthetic://procedures/SOP-104/2.0"
+        ],
+        "warnings": [],
+        "decision": "eligible_for_review",
+        "human_review_required": true,
+        "synthetic_demo": true
+      },
+      "approval_evidence_status": "missing",
+      "evidence_complete": false,
+      "blockers": [
+        "Human approval evidence missing"
+      ],
+      "human_review_required": true,
+      "evidence_refs": [
+        "synthetic://actions/ACT-001",
+        "synthetic://procedures/SOP-104/2.0",
+        "synthetic://evidence/EVD-001",
+        "synthetic://evidence/EVD-002"
+      ],
+      "readiness": "blocked",
+      "ready_for_human_review": false,
+      "execution_authorized": false,
+      "synthetic_demo": true,
+      "evaluation_time": "2026-10-16T12:00:00+00:00"
+    },
+    "positive_control": {
+      "action_id": "ACT-002",
+      "found": true,
+      "relevant_procedure": "SOP-104@2.0",
+      "procedure_status": {
+        "procedure_id": "SOP-104@2.0",
+        "found": true,
+        "status": "current",
+        "version": "2.0",
+        "is_superseded": false,
+        "current_approved_version": "SOP-104@2.0",
+        "evidence_refs": [
+          "synthetic://procedures/SOP-104/2.0"
+        ],
+        "warnings": [],
+        "decision": "eligible_for_review",
+        "human_review_required": true,
+        "synthetic_demo": true
+      },
+      "approval_evidence_status": "present",
+      "evidence_complete": true,
+      "blockers": [],
+      "human_review_required": true,
+      "evidence_refs": [
+        "synthetic://actions/ACT-002",
+        "synthetic://procedures/SOP-104/2.0",
+        "synthetic://evidence/EVD-003",
+        "synthetic://evidence/EVD-004",
+        "synthetic://approvals/APR-002"
+      ],
+      "readiness": "eligible_for_human_review",
+      "ready_for_human_review": true,
+      "execution_authorized": false,
+      "synthetic_demo": true,
+      "evaluation_time": "2026-10-16T12:00:00+00:00"
+    }
+  },
+  "spoof_rejected": true,
+  "limitations": "Dated synthetic snapshot; no Stellix/Glean connection; human review required; no operational authorization"
+}

@@ -1,0 +1,22 @@
+{
+  "review_type": "Separate read-only AI-assisted candidate review",
+  "material_findings": 0,
+  "minor_findings": [
+    {
+      "issue": "Workflow/security files omitted from source archive despite README navigation",
+      "resolution": "Included .github/workflows/test.yml, SECURITY.md and .gitignore in MANIFEST.in; final archive payload verified and full 106-test suite passed."
+    }
+  ],
+  "scope": [
+    "Source/fixture/test preservation",
+    "Privacy and absence of Git metadata",
+    "Two tools and transcript schema consistency",
+    "Rights policy and ownership gate",
+    "Dependency regression evidence",
+    "Workflow, local links and self-contained visuals"
+  ],
+  "limits": [
+    "Reviewer did not run tests or determine legal ownership.",
+    "Final package and digest verification performed by preparing agent."
+  ]
+}

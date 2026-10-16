@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Knowledge Operations MCP</title><desc id="desc">Independent synthetic evidence checks, with citations and blockers for a human reviewer.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#153840}.muted{fill:#4c6870}.label{font-size:13px;font-weight:700;letter-spacing:1.5px}.copy{font-size:17px}.heading{font-size:22px;font-weight:700}</style>
+
+<defs><linearGradient id="panel" x2="1" y2="1"><stop stop-color="#10363e"/><stop offset="1" stop-color="#19504f"/></linearGradient></defs>
+<rect x="1" y="1" width="1198" height="388" rx="20" fill="#f3f8f7" stroke="#cadbd8"/>
+<path d="M35 37h32v32H35z" fill="none" stroke="#267c71" stroke-width="2"/><path d="M43 46h16M43 53h12M43 60h9" stroke="#267c71" stroke-width="2"/>
+<text x="83" y="58" class="label ink">INDEPENDENT PORTFOLIO PROJECT</text>
+<text x="43" y="132" font-size="45" font-weight="700" class="ink">Knowledge</text>
+<text x="43" y="185" font-size="45" font-weight="700" class="ink">Operations MCP</text>
+<text x="45" y="231" font-size="23" class="ink">Trace the evidence before acting.</text>
+<text x="45" y="271" font-size="17" class="muted">Two read-only tools. Structured citations.</text>
+<text x="45" y="298" font-size="17" class="muted">Explicit blockers. A human makes the decision.</text>
+<rect x="44" y="328" width="142" height="29" rx="14" fill="#dfefea"/><text x="60" y="348" font-size="12" font-weight="700" fill="#18594f">SYNTHETIC DATA</text>
+<text x="206" y="348" font-size="13" class="muted">No company connection or endorsement</text>
+<rect x="628" y="25" width="546" height="340" rx="15" fill="url(#panel)"/>
+<text x="657" y="61" class="label" fill="#9edbc8">THE REVIEW PATH</text>
+<g fill="none" stroke="#5a9189" stroke-width="1.5"><path d="M680 110v165"/><circle cx="680" cy="110" r="14" fill="#19504f"/><circle cx="680" cy="193" r="14" fill="#19504f"/><circle cx="680" cy="276" r="14" fill="#19504f"/></g>
+<g fill="#d7f4e8" font-size="12" text-anchor="middle"><text x="680" y="114">1</text><text x="680" y="197">2</text><text x="680" y="280">3</text></g>
+<text x="711" y="107" font-size="21" font-weight="700" fill="white">Check the procedure</text><text x="711" y="134" font-size="16" fill="#bcd9d5">Current version, status and citations</text>
+<text x="711" y="190" font-size="21" font-weight="700" fill="white">Assess stored evidence</text><text x="711" y="217" font-size="16" fill="#bcd9d5">Exact action, scope, role and timing</text>
+<text x="711" y="273" font-size="21" font-weight="700" fill="white">Return a review boundary</text><text x="711" y="300" font-size="16" fill="#bcd9d5">Human review required; execution denied</text>
+<path d="M657 326h487" stroke="#42776f"/><text x="657" y="346" font-size="12" fill="#bcd9d5">PYTHON 3.12 / OFFICIAL MCP SDK / PYDANTIC / LOCAL JSON</text>
+</svg>

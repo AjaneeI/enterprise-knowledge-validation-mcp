@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "synthetic_demo": true,
+  "evaluation_time": "2026-10-16T12:00:00Z",
+  "procedures": [
+    {
+      "id": "SOP-104",
+      "version": "1.0",
+      "status": "superseded",
+      "owner": "Operations",
+      "effective_date": "2025-01-01",
+      "superseded_by": "SOP-104@2.0",
+      "steps": [
+        "Reset alarm immediately",
+        "Notify supervisor after reset"
+      ],
+      "approved": true
+    },
+    {
+      "id": "SOP-104",
+      "version": "2.0",
+      "status": "current",
+      "owner": "Operations",
+      "effective_date": "2026-08-01",
+      "superseded_by": null,
+      "steps": [
+        "Stop equipment safely",
+        "Notify supervisor",
+        "Inspect sensor and log findings"
+      ],
+      "approved": true
+    },
+    {
+      "id": "SOP-205",
+      "version": "1.0",
+      "status": "under_review",
+      "owner": "Quality",
+      "effective_date": "2026-07-01",
+      "superseded_by": null,
+      "steps": [
+        "Review batch exception",
+        "Request quality approval"
+      ],
+      "approved": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "ACT-001",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "required_approver_role": "Quality reviewer",
+      "requested_at": "2026-10-16T09:00:00Z",
+      "owner_confirmation_id": "EVD-001",
+      "required_evidence_ids": [
+        "EVD-002"
+      ]
+    },
+    {
+      "id": "ACT-002",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "required_approver_role": "Quality reviewer",
+      "requested_at": "2026-10-16T09:00:00Z",
+      "owner_confirmation_id": "EVD-003",
+      "required_evidence_ids": [
+        "EVD-004"
+      ]
+    },
+    {
+      "id": "ACT-003",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "required_approver_role": "Quality reviewer",
+      "requested_at": "2026-10-16T09:00:00Z",
+      "owner_confirmation_id": "EVD-005",
+      "required_evidence_ids": [
+        "EVD-006"
+      ]
+    },
+    {
+      "id": "ACT-004",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "required_approver_role": "Quality reviewer",
+      "requested_at": "2026-10-16T09:00:00Z",
+      "owner_confirmation_id": "EVD-007",
+      "required_evidence_ids": [
+        "EVD-008"
+      ]
+    },
+    {
+      "id": "ACT-005",
+      "procedure_ref": "SOP-104@1.0",
+      "scope": "synthetic-alarm-review",
+      "required_approver_role": "Quality reviewer",
+      "requested_at": "2026-10-16T09:00:00Z",
+      "owner_confirmation_id": "EVD-009",
+      "required_evidence_ids": [
+        "EVD-010"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-001",
+      "action_id": "ACT-001",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "owner_confirmation",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic owner confirmation"
+    },
+    {
+      "id": "EVD-002",
+      "action_id": "ACT-001",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "supporting",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic review note; no real operational evidence"
+    },
+    {
+      "id": "EVD-003",
+      "action_id": "ACT-002",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "owner_confirmation",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic owner confirmation"
+    },
+    {
+      "id": "EVD-004",
+      "action_id": "ACT-002",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "supporting",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic review note; no real operational evidence"
+    },
+    {
+      "id": "EVD-005",
+      "action_id": "ACT-003",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "owner_confirmation",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic owner confirmation"
+    },
+    {
+      "id": "EVD-006",
+      "action_id": "ACT-003",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "supporting",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic review note; no real operational evidence"
+    },
+    {
+      "id": "EVD-007",
+      "action_id": "ACT-004",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "owner_confirmation",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic owner confirmation"
+    },
+    {
+      "id": "EVD-008",
+      "action_id": "ACT-004",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "supporting",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic review note; no real operational evidence"
+    },
+    {
+      "id": "EVD-009",
+      "action_id": "ACT-005",
+      "procedure_ref": "SOP-104@1.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "owner_confirmation",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic owner confirmation"
+    },
+    {
+      "id": "EVD-010",
+      "action_id": "ACT-005",
+      "procedure_ref": "SOP-104@1.0",
+      "scope": "synthetic-alarm-review",
+      "kind": "supporting",
+      "recorded_by": "synthetic-coordinator",
+      "recorded_at": "2026-10-16T09:30:00Z",
+      "summary": "Synthetic review note; no real operational evidence"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "APR-002",
+      "action_id": "ACT-002",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "approver_id": "synthetic-reviewer-01",
+      "approver_role": "Quality reviewer",
+      "decision": "approved",
+      "recorded_at": "2026-10-16T10:00:00Z",
+      "expires_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "APR-003",
+      "action_id": "ACT-003",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "approver_id": "synthetic-reviewer-01",
+      "approver_role": "Quality reviewer",
+      "decision": "approved",
+      "recorded_at": "2026-10-16T10:00:00Z",
+      "expires_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "APR-013",
+      "action_id": "ACT-003",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "synthetic-alarm-review",
+      "approver_id": "synthetic-reviewer-02",
+      "approver_role": "Quality reviewer",
+      "decision": "rejected",
+      "recorded_at": "2026-10-16T10:00:00Z",
+      "expires_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "APR-004",
+      "action_id": "ACT-004",
+      "procedure_ref": "SOP-104@2.0",
+      "scope": "wrong-scope",
+      "approver_id": "synthetic-reviewer-01",
+      "approver_role": "Quality reviewer",
+      "decision": "approved",
+      "recorded_at": "2026-10-16T10:00:00Z",
+      "expires_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "APR-005",
+      "action_id": "ACT-005",
+      "procedure_ref": "SOP-104@1.0",
+      "scope": "synthetic-alarm-review",
+      "approver_id": "synthetic-reviewer-01",
+      "approver_role": "Quality reviewer",
+      "decision": "approved",
+      "recorded_at": "2026-10-16T10:00:00Z",
+      "expires_at": "2026-10-17T10:00:00Z"
+    }
+  ]
+}

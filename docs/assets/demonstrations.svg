@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="355" viewBox="0 0 1200 355" role="img" aria-labelledby="title desc">
+<title id="title">Two recorded synthetic scenarios</title><desc id="desc">Selected fields from actual official SDK JSON responses. This is a summary illustration, not a user interface screenshot.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#153840}.muted{fill:#4c6870}.label{font-size:13px;font-weight:700;letter-spacing:1.5px}.copy{font-size:17px}.heading{font-size:22px;font-weight:700}</style>
+
+<rect x="1" y="1" width="1198" height="353" rx="18" fill="#f7faf9" stroke="#cadbd8"/>
+<text x="30" y="36" class="label muted">ACTUAL PROTOCOL OUTPUT / SELECTED FIELDS / SYNTHETIC DATA</text>
+<g fill="white" stroke="#c6d9d2"><rect x="25" y="57" width="561" height="236" rx="11"/><rect x="611" y="57" width="564" height="236" rx="11"/></g>
+<text x="48" y="95" font-size="20" font-weight="700" class="ink">01 / Procedure status</text><text x="634" y="95" font-size="20" font-weight="700" class="ink">02 / Action readiness</text>
+<g font-size="17" class="muted"><text x="48" y="135">procedure_id: SOP-104@1.0</text><text x="48" y="173">status: superseded</text><text x="48" y="211">current_approved_version: SOP-104@2.0</text><text x="634" y="135">action_id: ACT-001</text><text x="634" y="173">approval_evidence_status: missing</text><text x="634" y="211">execution_authorized: false</text></g>
+<rect x="48" y="237" width="280" height="31" rx="15" fill="#fbefd6"/><text x="64" y="258" font-size="13" font-weight="700" fill="#77500e">SUPERSEDED → HOLD FOR REVIEW</text>
+<rect x="634" y="237" width="303" height="31" rx="15" fill="#f7e5df"/><text x="650" y="258" font-size="13" font-weight="700" fill="#853f2e">BLOCKED → HUMAN REVIEW REQUIRED</text>
+<text x="30" y="329" font-size="14" class="muted">Derived from evidence/demo-stdio.json. Positive control and spoof rejection are included in the complete transcript.</text>
+</svg>

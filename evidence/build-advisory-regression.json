@@ -1,0 +1,18 @@
+{
+  "advisory": "GHSA-h35f-9h28-mq5c",
+  "method": "Upstream wheels extracted locally; FileList.global_exclude with NFC pattern and NFD filename",
+  "results": [
+    {
+      "version": "82.0.1",
+      "excluded_unicode_file": false,
+      "remaining_files": "['secret_cafe\u0301.txt']",
+      "exit_code": 1
+    },
+    {
+      "version": "83.0.0",
+      "excluded_unicode_file": true,
+      "remaining_files": "[]",
+      "exit_code": 0
+    }
+  ]
+}

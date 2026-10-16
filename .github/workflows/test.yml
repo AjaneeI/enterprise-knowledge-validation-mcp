@@ -1,0 +1,34 @@
+name: Verify synthetic MCP demo
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: '0.11.14'
+      - run: uv python install 3.12
+      - run: uv sync --locked --extra dev
+      - run: uv run --no-sync pytest -q
+      - run: uv run --no-sync python -m src.demo > demo-stdio.json
+      - run: uv build
+      - name: Verify installed wheel outside checkout
+        run: |
+          uv venv --python 3.12 /tmp/knowledge-ops-wheel
+          uv export --locked --no-dev --no-emit-project --output-file /tmp/runtime-requirements.txt
+          uv pip sync --python /tmp/knowledge-ops-wheel/bin/python /tmp/runtime-requirements.txt
+          uv pip install --python /tmp/knowledge-ops-wheel/bin/python --no-deps dist/*.whl
+          cd /tmp
+          /tmp/knowledge-ops-wheel/bin/knowledge-ops-demo > wheel-demo.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: protocol-demo-evidence
+          retention-days: 7
+          path: demo-stdio.json

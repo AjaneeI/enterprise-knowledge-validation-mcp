@@ -1,0 +1,156 @@
+Building source distribution...
+running egg_info
+writing knowledge_ops_mcp.egg-info/PKG-INFO
+writing dependency_links to knowledge_ops_mcp.egg-info/dependency_links.txt
+writing entry points to knowledge_ops_mcp.egg-info/entry_points.txt
+writing requirements to knowledge_ops_mcp.egg-info/requires.txt
+writing top-level names to knowledge_ops_mcp.egg-info/top_level.txt
+reading manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing knowledge_ops_mcp.egg-info/PKG-INFO
+writing dependency_links to knowledge_ops_mcp.egg-info/dependency_links.txt
+writing entry points to knowledge_ops_mcp.egg-info/entry_points.txt
+writing requirements to knowledge_ops_mcp.egg-info/requires.txt
+writing top-level names to knowledge_ops_mcp.egg-info/top_level.txt
+reading manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+running check
+creating knowledge_ops_mcp-0.2.0
+creating knowledge_ops_mcp-0.2.0/docs
+creating knowledge_ops_mcp-0.2.0/docs/assets
+creating knowledge_ops_mcp-0.2.0/evidence
+creating knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+creating knowledge_ops_mcp-0.2.0/src
+creating knowledge_ops_mcp-0.2.0/src/data
+creating knowledge_ops_mcp-0.2.0/tests
+copying files to knowledge_ops_mcp-0.2.0...
+copying .python-version -> knowledge_ops_mcp-0.2.0
+copying LICENSE -> knowledge_ops_mcp-0.2.0
+copying MANIFEST.in -> knowledge_ops_mcp-0.2.0
+copying README.md -> knowledge_ops_mcp-0.2.0
+copying THIRD_PARTY_NOTICES.md -> knowledge_ops_mcp-0.2.0
+copying pyproject.toml -> knowledge_ops_mcp-0.2.0
+copying uv.lock -> knowledge_ops_mcp-0.2.0
+copying docs/architecture.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/demo.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/glean-integration.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/provenance.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/security.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/verification.md -> knowledge_ops_mcp-0.2.0/docs
+copying docs/assets/architecture.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/build-badge.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/ci-badge.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/demonstrations.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/hero.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/protocol-badge.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying docs/assets/tests-badge.svg -> knowledge_ops_mcp-0.2.0/docs/assets
+copying evidence/build-advisory-regression.json -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/demo-http.json -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/demo-stdio.json -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/dependency-advisories.json -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/protocol-collection.txt -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/tests.txt -> knowledge_ops_mcp-0.2.0/evidence
+copying evidence/verification.json -> knowledge_ops_mcp-0.2.0/evidence
+copying knowledge_ops_mcp.egg-info/PKG-INFO -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying knowledge_ops_mcp.egg-info/SOURCES.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying knowledge_ops_mcp.egg-info/dependency_links.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying knowledge_ops_mcp.egg-info/entry_points.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying knowledge_ops_mcp.egg-info/requires.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying knowledge_ops_mcp.egg-info/top_level.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+copying src/__init__.py -> knowledge_ops_mcp-0.2.0/src
+copying src/demo.py -> knowledge_ops_mcp-0.2.0/src
+copying src/logic.py -> knowledge_ops_mcp-0.2.0/src
+copying src/models.py -> knowledge_ops_mcp-0.2.0/src
+copying src/server.py -> knowledge_ops_mcp-0.2.0/src
+copying src/data/records.json -> knowledge_ops_mcp-0.2.0/src/data
+copying tests/conftest.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_contract.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_demo.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_logic.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_protocol.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_reliability.py -> knowledge_ops_mcp-0.2.0/tests
+copying tests/test_startup.py -> knowledge_ops_mcp-0.2.0/tests
+copying knowledge_ops_mcp.egg-info/SOURCES.txt -> knowledge_ops_mcp-0.2.0/knowledge_ops_mcp.egg-info
+Writing knowledge_ops_mcp-0.2.0/setup.cfg
+Creating tar archive
+removing 'knowledge_ops_mcp-0.2.0' (and everything under it)
+Building wheel from source distribution...
+running egg_info
+writing knowledge_ops_mcp.egg-info/PKG-INFO
+writing dependency_links to knowledge_ops_mcp.egg-info/dependency_links.txt
+writing entry points to knowledge_ops_mcp.egg-info/entry_points.txt
+writing requirements to knowledge_ops_mcp.egg-info/requires.txt
+writing top-level names to knowledge_ops_mcp.egg-info/top_level.txt
+reading manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build/lib/src
+copying src/server.py -> build/lib/src
+copying src/models.py -> build/lib/src
+copying src/__init__.py -> build/lib/src
+copying src/logic.py -> build/lib/src
+copying src/demo.py -> build/lib/src
+running egg_info
+writing knowledge_ops_mcp.egg-info/PKG-INFO
+writing dependency_links to knowledge_ops_mcp.egg-info/dependency_links.txt
+writing entry points to knowledge_ops_mcp.egg-info/entry_points.txt
+writing requirements to knowledge_ops_mcp.egg-info/requires.txt
+writing top-level names to knowledge_ops_mcp.egg-info/top_level.txt
+reading manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'knowledge_ops_mcp.egg-info/SOURCES.txt'
+creating build/lib/src/data
+copying src/data/records.json -> build/lib/src/data
+copying src/data/records.json -> build/lib/src/data
+warning: build_py: byte-compiling is disabled, skipping.
+
+installing to build/bdist.macosx-10.13-universal2/wheel
+running install
+running install_lib
+creating build/bdist.macosx-10.13-universal2/wheel
+creating build/bdist.macosx-10.13-universal2/wheel/src
+copying build/lib/src/server.py -> build/bdist.macosx-10.13-universal2/wheel/./src
+copying build/lib/src/models.py -> build/bdist.macosx-10.13-universal2/wheel/./src
+copying build/lib/src/__init__.py -> build/bdist.macosx-10.13-universal2/wheel/./src
+copying build/lib/src/logic.py -> build/bdist.macosx-10.13-universal2/wheel/./src
+copying build/lib/src/demo.py -> build/bdist.macosx-10.13-universal2/wheel/./src
+creating build/bdist.macosx-10.13-universal2/wheel/src/data
+copying build/lib/src/data/records.json -> build/bdist.macosx-10.13-universal2/wheel/./src/data
+warning: install_lib: byte-compiling is disabled, skipping.
+
+running install_egg_info
+Copying knowledge_ops_mcp.egg-info to build/bdist.macosx-10.13-universal2/wheel/./knowledge_ops_mcp-0.2.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.macosx-10.13-universal2/wheel/knowledge_ops_mcp-0.2.0.dist-info/WHEEL
+creating '<verification-workspace>/dist/.tmp-bco5zy20/knowledge_ops_mcp-0.2.0-py3-none-any.whl' and adding 'build/bdist.macosx-10.13-universal2/wheel' to it
+adding 'knowledge_ops_mcp-0.2.0.dist-info/licenses/LICENSE'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/licenses/THIRD_PARTY_NOTICES.md'
+adding 'src/__init__.py'
+adding 'src/demo.py'
+adding 'src/logic.py'
+adding 'src/models.py'
+adding 'src/server.py'
+adding 'src/data/records.json'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/METADATA'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/WHEEL'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/entry_points.txt'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/top_level.txt'
+adding 'knowledge_ops_mcp-0.2.0.dist-info/RECORD'
+removing build/bdist.macosx-10.13-universal2/wheel
+Successfully built <verification-workspace>/dist/knowledge_ops_mcp-0.2.0.tar.gz
+Successfully built <verification-workspace>/dist/knowledge_ops_mcp-0.2.0-py3-none-any.whl

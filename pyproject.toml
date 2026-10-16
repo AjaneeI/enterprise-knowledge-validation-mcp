@@ -1,0 +1,29 @@
+[project]
+name = "knowledge-ops-mcp"
+version = "0.2.0"
+description = "Synthetic evidence-backed knowledge governance MCP demonstration"
+readme = "README.md"
+license = "LicenseRef-All-Rights-Reserved"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.12,<3.13"
+dependencies = ["mcp==1.30.0", "pydantic==2.14.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "anyio==4.15.1", "httpx==0.28.1", "jsonschema==4.26.0"]
+
+[project.scripts]
+knowledge-ops-mcp = "src.server:main"
+knowledge-ops-demo = "src.demo:main"
+
+[build-system]
+requires = ["setuptools==83.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+src = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

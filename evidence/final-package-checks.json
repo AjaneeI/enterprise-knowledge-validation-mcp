@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-16T19:01:58.151342+00:00",
+  "wheel_source_fixture_match": true,
+  "wheel_runs_outside_checkout": true,
+  "wheel_license_expression": "LicenseRef-All-Rights-Reserved",
+  "source_archive_includes_workflow_and_security_document": true,
+  "source_archive_preserves_source_fixture_and_tests": true,
+  "source_archive_full_test_result": "106 passed in 22.25s",
+  "package_text_scan_personal_paths_private_planning_and_personal_email_hits": 0,
+  "note": "Build artifacts inspected in local workspace; no package upload or remote CI run."
+}

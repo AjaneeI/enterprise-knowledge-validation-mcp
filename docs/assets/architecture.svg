@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Local architecture and proposed enterprise boundary</title><desc id="desc">Solid cards describe implemented local tools; dashed cards describe a potential future connection only.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#153840}.muted{fill:#4c6870}.label{font-size:13px;font-weight:700;letter-spacing:1.5px}.copy{font-size:17px}.heading{font-size:22px;font-weight:700}</style>
+
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1l7 4-7 4" fill="none" stroke="#267c71" stroke-width="1.5"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#f7faf9" stroke="#cadbd8"/>
+<text x="35" y="48" font-size="28" font-weight="700" class="ink">A narrow contract. An inspectable result.</text>
+<text x="35" y="80" class="copy muted">No model, external retrieval or operational write sits inside the local tool boundary.</text>
+<text x="35" y="126" class="label" fill="#267c71">IMPLEMENTED / VERIFIED LOCALLY</text>
+<g fill="white" stroke="#91b5ad" stroke-width="1.5"><rect x="35" y="147" width="310" height="173" rx="12"/><rect x="445" y="147" width="310" height="173" rx="12"/><rect x="855" y="147" width="310" height="173" rx="12"/></g>
+<text x="57" y="184" class="heading ink">MCP client</text><text x="57" y="220" class="copy muted">Official Python SDK</text><text x="57" y="247" class="copy muted">stdio / loopback HTTP</text><text x="57" y="282" font-size="14" class="muted">Initialize → discover → invoke</text>
+<text x="467" y="184" class="heading ink">Two read-only tools</text><text x="467" y="220" class="copy muted">Procedure status / readiness</text><text x="467" y="247" class="copy muted">Pydantic + deterministic checks</text><text x="467" y="282" font-size="14" class="muted">Strict inputs; invalid stores block</text>
+<text x="877" y="184" class="heading ink">Synthetic evidence</text><text x="877" y="220" class="copy muted">23 packaged JSON records</text><text x="877" y="247" class="copy muted">Versions, proof and approvals</text><text x="877" y="282" font-size="14" class="muted">Fixed time; editable local trust root</text>
+<g fill="none" stroke="#267c71" stroke-width="2" marker-end="url(#arrow)"><path d="M349 225h89"/><path d="M759 225h89"/></g>
+<path d="M1010 325v32H190v-32" fill="none" stroke="#267c71" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="366" y="339" width="468" height="35" rx="17" fill="#e1efe9"/><text x="600" y="362" font-size="14" font-weight="700" text-anchor="middle" fill="#18594f">Citations + blockers / human review / no execution</text>
+<path d="M35 407h1130" stroke="#d1dfdb"/>
+<text x="35" y="444" class="label muted">POTENTIAL ENTERPRISE CONNECTION / NOT IMPLEMENTED</text>
+<g fill="white" stroke="#91a9a5" stroke-width="1.5" stroke-dasharray="6 5"><rect x="35" y="465" width="310" height="105" rx="12"/><rect x="445" y="465" width="310" height="105" rx="12"/><rect x="855" y="465" width="310" height="105" rx="12"/></g>
+<text x="57" y="501" class="heading ink">Authorized host</text><text x="57" y="535" font-size="16" class="muted">Potential Glean tenant workflow</text>
+<text x="467" y="501" class="heading ink">Secured endpoint</text><text x="467" y="535" font-size="16" class="muted">Approved HTTPS + identity</text>
+<text x="877" y="501" class="heading ink">Protected evidence</text><text x="877" y="535" font-size="16" class="muted">Source permissions + policy owner</text>
+<g fill="none" stroke="#91a9a5" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrow)"><path d="M349 515h89"/><path d="M759 515h89"/></g>
+<text x="35" y="613" font-size="15" class="muted">Dashed components require separate design, permission and validation. No company integration is claimed.</text>
+</svg>
